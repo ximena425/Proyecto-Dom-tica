@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyecto Domótica</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    scroll-behavior:smooth;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    width:100%;
+    background:#020617;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:15px;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#0ea5e9,#6366f1);
+}
+
+.hero h1{
+    font-size:3.5rem;
+}
+
+.hero p{
+    margin-top:10px;
+}
+
+/* SECTIONS */
+section{
+    padding:90px 40px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#38bdf8;
+}
+
+/* CARDS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    transition:.3s;
+    box-shadow:0 0 10px rgba(0,0,0,.5);
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th,td{
+    border:1px solid #334155;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#1e293b;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#intro">Introducción</a>
+<a href="#casa">Casa</a>
+<a href="#oficina">Oficina</a>
+<a href="#rutinas">Rutinas</a>
+<a href="#app">Aplicación</a>
+<a href="#diseño">Diseño</a>
+<a href="#conclusion">Conclusión</a>
+
+</nav>
+
+<div class="hero" id="inicio">
+<div>
+<h1>🏠 Casa Inteligente</h1>
+<p>Proyecto de Domótica </p>
+
+</div>
+</div>
+
+<div style="max-width:800px; margin:auto;">
+<video controls style="width:100%; border-radius:15px;">
+  <source src="pres.mp4" type="video/mp4">
+</video>
+</div>
+
+
+
+
+
+
+
+
+
+<section id="intro">
+<h2>📌 Introducción</h2>
+<div class="card">
+<p style="color:aqua;"> La domótica es el conjunto de tecnologías que permiten automatizar y controlar de manera inteligente diferentes sistemas dentro de una vivienda, como la iluminación, la seguridad, la climatización y los electrodomésticos.<p>
+ <p style="color:aqua;">Gracias a estos avances, es posible mejorar la comodidad, optimizar el consumo de energía y aumentar la seguridad del hogar.<p>
+<p style="color:aqua;">A lo largo de este trabajo se presentarán distintos dispositivos inteligentes que pueden implementarse en una casa, explicando su funcionamiento, utilidad y la forma en que se integran entre sí para crear un entorno moderno, eficiente y funcional.<p>
+<p style="color:aqua;"> Además, se analizará cómo estos sistemas pueden adaptarse a las necesidades de los usuarios, permitiendo un control remoto y automatizado desde dispositivos móviles o asistentes de voz.
+El objetivo principal es conocer cómo la tecnología puede transformar un hogar tradicional en un espacio inteligente, brindando soluciones prácticas que mejoran la calidad de vida de las personas.</p> 
+
+</section>
+
+
+<section id="casa">
+<h2>🏡 Dispositivos Casa Inteligente</h2>
+
+<div class="grid">
+<div class="card"><h3>Sensor de Gas</h3><p>Detecta fugas peligrosas y previene accidentes.</p></div>
+
+<div class="card"><h3>Alexa</h3><p>Controla todos los dispositivos mediante voz.</p></div>
+
+<div class="card"><h3>Sensor de Humo</h3><p>Detecta incendios y cambios ambientales.</p></div>
+
+<div class="card"><h3>Cámara IP</h3><p>Vigilancia en tiempo real desde el celular.</p></div>
+
+<div class="card"><h3>Cerradura Inteligente</h3><p>Acceso seguro sin llaves físicas.</p></div>
+
+<div class="card"><h3>Focos Inteligentes</h3><p>Control total de iluminación.</p></div>
+
+<div class="card"><h3>Persianas Automáticas</h3><p>Control de luz natural y temperatura.</p></div>
+
+<div class="card"><h3>Alarma GSM</h3><p>Funciona incluso sin WiFi.</p></div>
+
+<div class="card"><h3>Aire Inteligente</h3><p>Regula temperatura y purifica el aire.</p></div>
+
+<div class="card"><h3>Aspiradora Robot</h3><p>Limpieza automática del hogar.</p></div>
+
+<div class="card"><h3>Conmutador</h3><p>Controlar el encendido y apagado de las luces.</p></div>
+
+<div class="card"><h3>Bomba de agua</h3><p>Automatiza el llenado de tanques de agua, asegurando el suministro de agua potable.</p></div>
+
+<div class="card"><h3>Timbre con cámara</h3><p>Sistema de videovigilancia y comunicación.</p></div>
+
+<div class="card"><h3>Yale Cerradura</h3><p>Control de acceso inteligente mediante huella o códigos.</p></div>
+
+<div class="card"><h3>Detector de movimiento</h3><p>Capta el desplazamiento de personas o animales dentro de un área especifica.</p></div>
+
+<div class="card"><h3>Alimentador</h3><p>Programa y controla las porciones de comida para tu mascota.</p></div>
+
+</div>
+</section>
+
+<section id="oficina">
+<h2>🏢 Oficina Inteligente</h2>
+
+<div class="grid">
+
+<div class="card"><h3>Cafetera Inteligente</h3><p>Prepara café automáticamente.</p></div>
+
+<div class="card"><h3>Impresora Inteligente</h3><p>Impresión remota y monitoreo.</p></div>
+
+<div class="card"><h3>Computadoras Inteligentes</h3><p>Automatización y productividad.</p></div>
+
+<div class="card"><h3>Ventilador Inteligente</h3><p>Control automático del aire.</p></div>
+
+<div class="card"><h3>Cámaras</h3><p>Seguridad en la oficina.</p></div>
+
+<div class="card"><h3>Luces Inteligentes</h3><p>Ahorro energético y comodidad.</p></div>
+
+</div>
+</section>
+
+<section id="rutinas ">
+<h2>💰 Rutinas </h2>
+<div class="card">
+<p>
+<h3>Casa Inteligente</h3>
+<p style="color:#38bdf8;">1. Emergencia por Gas</p>
+<p>
+Si se detecta en exceso en el gas:
+•	Cerrar válvula de gas
+•	Encender focos en rojo
+•	Activar alarma
+•	Emitir alerta por voz
+•	Activar cámaras
+•	Enviar notificación al celular
+<p style="color:#38bdf8;">2. Si se ocasiona un Incendio</p>
+
+•	Activar alarma
+•	Abrir persianas
+•	Encender luces
+•	Emitir alerta por voz
+•	Grabar video
+<p style="color:#38bdf8;">3.Todas las noches</p>
+3.Todas las noches
+•	Cerrar puertas
+•	Apagar luces
+•	Activar sistema de seguridad
+•	Ajustar temperatura
+<p style="color:#38bdf8;">4. Al Llegar a Casa</p>
+•	Abrir cerradura
+•	Encender luces
+•	Subir persianas
+•	Encender aire acondicionado
+<p style="color:#38bdf8;">3.Todas las noches</p>
+•	Activar aspiradora
+•	Evitar zonas ocupadas
+<p style="color:#38bdf8;">6. Riego Inteligente</p>
+
+•	Activar riego si es necesario
+•	Detener riego al nivel adecuado
+<p style="color:#38bdf8;">7. Control de Agua</p>
+•	Activar bomba cuando el nivel es bajo
+•	Apagar al llenarse
+<p style="color:#38bdf8;">8. Cuando suene el timbre Inteligente</p>
+
+•	Mostrar video del visitante
+•	Enviar notificación
+</p>
+<video width="500" controls>
+  <source src="video.mp4" type="video/mp4">
+</video>
+<h3 style="margin-top:20px;">Oficina Inteligente</h3>
+<p style="color:yellow;">1. Inicio de Jornada</p>
+•	Encender luces 
+•	Encender computadoras 
+•	Encender cafetera 
+•	Ajustar ventilación 
+<p style="color:yellow;">2. Modo Cierre</p>
+•	Apagar luces 
+•	Apagar equipos (PC, impresora) 
+•	Activar cámaras y alarmas 
+•	Cerrar accesos 
+<p style="color:yellow;">3. Ahorro Energético Automático</p>
+
+•	Detectar áreas vacías 
+•	Apagar luces 
+•	Apagar dispositivos 
+•	Reducir consumo 
+<p style="color:yellow;">4. Seguridad al Detectar Movimiento</p>
+•	Activar cámaras 
+•	Encender luces 
+•	Enviar alerta 
+•	Grabar video
+<p style="color:yellow;">5. Modo Reunión</p> 
+
+•	Ajustar iluminación 
+•	Reducir ruido 
+•	Ajustar temperatura 
+•	Preparar equipos 
+
+
+
+</div>
+</section>
+
+</table>
+
+</div>
+</section>
+
+<section id="diseño">
+<h2>✅ Diseño</h2>
+<div class="card">
+<p>
+Ahora presentaremos el diseño de nuestra casa inteligente
+</p>
+<img src="casa.jpeg" alt="Descripción" width="500"> <img src="casa2.jpeg" alt="Descripción" width="500">
+</div>
+<p>
+Ahora presentaremos el diseño de nuestra oficina inteligente
+</p>
+<img src="oficina.jpeg" alt="Descripción" width="500"> 
+</div>
+
+</section>
+<section id="app">
+<h2>✅ Aplicación</h2>
+<div class="card">
+</p> La aplicacion se baso en un formato de programacion en el cual por medio de un codigo que se geero en visual code vision y se subio a la plataforma de expo go snack y luego medio de una descarga en formato zip  para ya luego descargarlo en extraer aqui.
+luego de eso en la misma carpeta se le da cmd o terminal para poner diferentes comandos asi como descargar el software node.js, y hasta llegar a la descarga en formato apk.<p>
+<p>Ahora les mostraremos en Qr para visualizar mejor
+<p>
+<img src="imagen.jpeg" alt="Descripción" width="300">
+
+
+
+
+
+
+
+
+</div>
+</section>
+
+</section>
+<section id="conclusion">
+<h2>✅ Conclusión</h2>
+<div class="card">
+<p>
+Aprendimos mucho de la domótica y de todos los cambios que puede hacer al momento de implementarlos en nuestro hogar, además nos ayudó para ir pensando en nuestro futuro y proyectar nuestra futura casa, haciendo planos, presupuestos y todo lo necesario para que quede bien nuestra casa con ayuda de la domótica 
+ya que representa una gran innovación en la forma en que interactuamos con nuestro hogar, permitiendo automatizar y controlar diversos dispositivos de manera sencilla y eficiente. <p>
+<p>A través de la integración de tecnologías inteligentes, es posible mejorar la comodidad, optimizar el consumo de energía y reforzar la seguridad en la vida diaria.<p>
+<p>Además, la implementación de estos sistemas no solo facilita las tareas cotidianas, sino que también contribuye a crear espacios más modernos, funcionales y adaptados a las necesidades de cada persona.<p>
+<p> Con el uso de dispositivos como iluminación inteligente, sensores, cámaras y electrodomésticos automatizados, se logra un mayor control y organización dentro del hogar.<p>
+<p>Finalmente, la domótica continúa evolucionando, por lo que en el futuro será cada vez más accesible y común en los hogares, convirtiéndose en una herramienta fundamental para mejorar la calidad de vida y aprovechar al máximo los avances tecnológicos.<p>
+
+</p>
+</div>
+</section>
+
+<footer>
+<p>Proyecto de Domótica 🚀 | Casa Inteligente</p>
+</footer>
+
+
+</body>
+</html>
